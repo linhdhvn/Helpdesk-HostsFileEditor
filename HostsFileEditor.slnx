@@ -1,0 +1,18 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+  </Configurations>
+  <Folder Name="/Documentation/">
+    <File Path="License.md" />
+    <File Path="Readme.md" />
+  </Folder>
+  <Folder Name="/Scripts/">
+    <File Path="build-clean.bat" />
+    <File Path="build-debug.bat" />
+    <File Path="build-release.bat" />
+    <File Path="HostsFileEditor.proj" />
+  </Folder>
+  <Folder Name="/Sources/">
+    <Project Path="src/HostsFileEditor.csproj" />
+  </Folder>
+</Solution>

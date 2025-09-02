@@ -76,7 +76,7 @@ with HostsFileEditor. If not, see http://www.gnu.org/licenses/.
 
   <Target Name="InternalBuild" DependsOnTargets = "CleanBin;CreateDirectories">
     <CreateItem
-      Include=".\*.sln">
+      Include=".\*.slnx">
       <Output
         TaskParameter="Include"
         ItemName="SolutionFiles"/>
