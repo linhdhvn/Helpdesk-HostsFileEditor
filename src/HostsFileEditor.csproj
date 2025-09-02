@@ -50,6 +50,49 @@
     </Content>
     <Content Include="HostsFileEditor.ico" />
   </ItemGroup>
+  <Target Name="CreateBuildDirectories" BeforeTargets="BeforeBuild">
+    <MakeDir Directories="$(MSBuildProjectDirectory)\..\bin" Condition="!Exists('$(MSBuildProjectDirectory)\..\bin')" />
+    <MakeDir Directories="$(MSBuildProjectDirectory)\..\logs" Condition="!Exists('$(MSBuildProjectDirectory)\..\logs')" />
+  </Target>
+  <Target Name="CleanBin">
+    <ItemGroup>
+      <BinFiles Include="$(MSBuildProjectDirectory)\..\bin\*.*" />
+    </ItemGroup>
+    <Delete Files="@(BinFiles)" />
+    <RemoveDir Directories="$(MSBuildProjectDirectory)\..\bin" Condition="Exists('$(MSBuildProjectDirectory)\..\bin')" />
+    <Message Text="Cleaned bin directory" Importance="high" />
+  </Target>
+  <Target Name="CleanLogs">
+    <ItemGroup>
+      <LogFiles Include="$(MSBuildProjectDirectory)\..\logs\*.*" />
+    </ItemGroup>
+    <Delete Files="@(LogFiles)" />
+    <RemoveDir Directories="$(MSBuildProjectDirectory)\..\logs" Condition="Exists('$(MSBuildProjectDirectory)\..\logs')" />
+    <Message Text="Cleaned logs directory" Importance="high" />
+  </Target>
+  <Target Name="CleanBinAndLogs" AfterTargets="Clean">
+    <CallTarget Targets="CleanBin;CleanLogs" />
+    <Message Text="Cleaned bin and logs directories" Importance="high" />
+  </Target>
+  <Target Name="CleanAll" DependsOnTargets="CleanBin;CleanLogs">
+    <ItemGroup>
+      <AllBuildFiles Include="$(MSBuildProjectDirectory)\bin\**\*.*" />
+      <AllBuildFiles Include="$(MSBuildProjectDirectory)\obj\**\*.*" />
+    </ItemGroup>
+    <Delete Files="@(AllBuildFiles)" />
+    <RemoveDir Directories="$(MSBuildProjectDirectory)\bin;$(MSBuildProjectDirectory)\obj" Condition="Exists('$(MSBuildProjectDirectory)\bin') OR Exists('$(MSBuildProjectDirectory)\obj')" />
+    <Message Text="Cleaned all build artifacts, bin directory, and logs directory" Importance="high" />
+  </Target>
+  <Target Name="CopyFilesToBin" AfterTargets="Publish">
+    <ItemGroup Condition="'$(Configuration)' == 'Release'">
+      <PublishedFiles Include="$(PublishDir)**\*.*" Exclude="$(PublishDir)**\*.pdb;$(PublishDir)**\*.vshost.exe" />
+    </ItemGroup>
+    <ItemGroup Condition="'$(Configuration)' == 'Debug'">
+      <PublishedFiles Include="$(PublishDir)**\*.*" Exclude="$(PublishDir)**\*.vshost.exe" />
+    </ItemGroup>
+    <Copy SourceFiles="@(PublishedFiles)" DestinationFolder="$(MSBuildProjectDirectory)\..\bin" SkipUnchangedFiles="true" />
+    <Message Text="Copied @(PublishedFiles->Count()) files to bin directory" Importance="high" />
+  </Target>
   <!-- Change to AfterTargets to CopyNativeBinary if using Native AOT -->
   <Target Name="SignAndPackageAfterPublish" AfterTargets="Publish">
     <PropertyGroup>
