@@ -1,4 +1,4 @@
-## Download
+﻿## Download
 
 Release binaries can be downloaded from [GitHub](https://github.com/scottlerch/HostsFileEditor/releases).
  * [Download Latest Installer](https://github.com/scottlerch/HostsFileEditor/releases/download/v1.2.0/HostsFileEditorSetup-1.2.0.msi)
@@ -27,11 +27,36 @@ Using the filter and sort while editing is quirky. The filter and sort are appli
 
 ## Build
 
-Requires Visual Studio 2022 or newer. To build the installer you must have [Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/) with `makeappx.exe` and `signtool.exe` commands.
+Requires .NET 9.0 or later. To build the installer you must have [Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/) with `makeappx.exe` and `signtool.exe` commands.
 
-Run `build-release.bat` or `build-debug.bat`. 
+To build the application, use the .NET CLI:
 
-The binaries and setup file will be copied to the `bin` directory
+```bash
+# Build for Debug (includes debugging symbols)
+dotnet build -c Debug
+
+# Build for Release (optimized)
+dotnet build -c Release
+
+# Build and publish (creates deployable package)
+dotnet publish -c Release
+
+# Build and publish with binary logging (recommended for troubleshooting)
+dotnet publish -c Release -bl:logs/publish.binlog
+
+# Clean project build artifacts, bin directory, and logs directory
+dotnet clean
+```
+
+### Build Outputs
+
+- Built files are automatically copied to the `.\bin` directory after publishing
+- Binary build logs can be generated using the `-bl` flag (e.g., `dotnet build -bl:logs/build-Release.binlog`)
+- The build process automatically creates necessary directories (`bin`, `logs`)
+
+You can view binary logs using:
+- Visual Studio: File → Open → build log file (.binlog)
+- MSBuild Structured Log Viewer: Download from https://msbuildlog.com/
 
 ## License
  

@@ -50,6 +50,28 @@
     </Content>
     <Content Include="HostsFileEditor.ico" />
   </ItemGroup>
+  <Target Name="CreateBuildDirectories" BeforeTargets="BeforeBuild">
+    <MakeDir Directories="$(MSBuildProjectDirectory)\..\bin" Condition="!Exists('$(MSBuildProjectDirectory)\..\bin')" />
+    <MakeDir Directories="$(MSBuildProjectDirectory)\..\logs" Condition="!Exists('$(MSBuildProjectDirectory)\..\logs')" />
+  </Target>
+  <Target Name="CleanCustomDirectories" AfterTargets="Clean">
+    <ItemGroup>
+      <!-- Custom bin and logs directories -->
+      <BinFiles Include="$(MSBuildProjectDirectory)\..\bin\*.*" />
+      <LogFiles Include="$(MSBuildProjectDirectory)\..\logs\*.*" />
+      <!-- Standard build artifacts -->
+      <BuildFiles Include="$(MSBuildProjectDirectory)\bin\**\*.*" />
+      <BuildFiles Include="$(MSBuildProjectDirectory)\obj\**\*.*" />
+    </ItemGroup>
+    <Delete Files="@(BinFiles)" />
+    <Delete Files="@(LogFiles)" />
+    <Delete Files="@(BuildFiles)" />
+    <RemoveDir Directories="$(MSBuildProjectDirectory)\..\bin" Condition="Exists('$(MSBuildProjectDirectory)\..\bin')" />
+    <RemoveDir Directories="$(MSBuildProjectDirectory)\..\logs" Condition="Exists('$(MSBuildProjectDirectory)\..\logs')" />
+    <RemoveDir Directories="$(MSBuildProjectDirectory)\bin" Condition="Exists('$(MSBuildProjectDirectory)\bin')" />
+    <RemoveDir Directories="$(MSBuildProjectDirectory)\obj" Condition="Exists('$(MSBuildProjectDirectory)\obj')" />
+    <Message Text="Cleaned all build artifacts, bin directory, and logs directory" Importance="high" />
+  </Target>
   <!-- Change to AfterTargets to CopyNativeBinary if using Native AOT -->
   <Target Name="SignAndPackageAfterPublish" AfterTargets="Publish">
     <PropertyGroup>
@@ -66,5 +88,13 @@
     <Exec Command="signtool sign /fd SHA256 /a /f $(CertFile) /p $(CertPassword) &quot;$(MsixFile)&quot;" />
     <!-- Create a ZIP file of the published files -->
     <Exec Command="cd /d &quot;$(PublishDir)&quot; &amp;&amp; &quot;$(Pkg7ZipCLI)\tools\7za.exe&quot; a -tzip -aoa &quot;$(PublishZipFile)&quot; *.exe" />
+    <ItemGroup Condition="'$(Configuration)' == 'Release'">
+      <PublishedFiles Include="$(PublishDir)**\*.*" Exclude="$(PublishDir)**\*.pdb" />
+    </ItemGroup>
+    <ItemGroup Condition="'$(Configuration)' == 'Debug'">
+      <PublishedFiles Include="$(PublishDir)**\*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(PublishedFiles)" DestinationFolder="$(MSBuildProjectDirectory)\..\bin" SkipUnchangedFiles="true" />
+    <Message Text="Copied @(PublishedFiles->Count()) files to bin directory" Importance="high" />
   </Target>
 </Project>
