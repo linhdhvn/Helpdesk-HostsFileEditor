@@ -51,363 +51,347 @@ partial class MainForm
     /// </summary>
     private void InitializeComponent()
     {
-        this.components = new System.ComponentModel.Container();
+        components = new System.ComponentModel.Container();
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-        System.Windows.Forms.ToolStripSeparator toolStripSeparator22;
-        System.Windows.Forms.ToolStripSeparator toolStripSeparator23;
-        System.Windows.Forms.ToolStripSeparator toolStripSeparator25;
-        System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        System.Windows.Forms.ToolStripSeparator toolStripSeparator27;
-        System.Windows.Forms.ToolStripSeparator toolStripSeparator18;
-        System.Windows.Forms.ToolStripSeparator toolStripSeparator14;
-        System.Windows.Forms.ToolStripSeparator toolStripSeparator13;
-        System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
-        System.Windows.Forms.ToolStripSeparator toolStripSeparator28;
-        System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
-        System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
-        System.Windows.Forms.ToolStripSeparator toolStripSeparator24;
-        System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
-        System.Windows.Forms.ToolStripMenuItem menuFilter;
-        System.Windows.Forms.ToolStripSeparator toolStripSeparator15;
-        System.Windows.Forms.ToolStripSeparator toolStripSeparator26;
-        System.Windows.Forms.ToolStripSeparator toolStripSeparator16;
-        System.Windows.Forms.ToolStripSeparator toolStripSeparator17;
-        System.Windows.Forms.ToolStripSeparator toolStripSeparator19;
-        System.Windows.Forms.ToolStripSeparator toolStripSeparator21;
-        System.Windows.Forms.ToolStripSeparator toolStripSeparator20;
-        System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        this.toolStripContainer = new System.Windows.Forms.ToolStripContainer();
-        this.statusStrip = new System.Windows.Forms.StatusStrip();
-        this.labelLineCount = new System.Windows.Forms.ToolStripStatusLabel();
-        this.labelLineCountNumber = new HostsFileEditor.Controls.ToolStripBindableStatusLabel();
-        this.bindingSourceHostFile = new System.Windows.Forms.BindingSource(this.components);
-        this.labelHostEntries = new System.Windows.Forms.ToolStripStatusLabel();
-        this.labelHostEntriesCount = new HostsFileEditor.Controls.ToolStripBindableStatusLabel();
-        this.splitContainer = new System.Windows.Forms.SplitContainer();
-        this.dataGridViewHostsEntries = new HostsFileEditor.Controls.HostsEntryDataGridView();
-        this.columnValid = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-        this.columnEnabled = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-        this.columnIpAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        this.columnHostnames = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        this.columnComment = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        this.columnUnparsedText = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        this.columnFiller = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        this.contextMenuGrid = new System.Windows.Forms.ContextMenuStrip(this.components);
-        this.menuContextCut = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuContextCopy = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuContextPaste = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuContextDelete = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuContextDuplicate = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuContextMoveUp = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuContextMoveDown = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuContextInsertAbove = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuContextInsertBelow = new System.Windows.Forms.ToolStripMenuItem();
-        this.toolStripSeparator31 = new System.Windows.Forms.ToolStripSeparator();
-        this.toolStripSeparator32 = new System.Windows.Forms.ToolStripSeparator();
-        this.toolStripSeparator33 = new System.Windows.Forms.ToolStripSeparator();
-        this.contextMenuCheck = new System.Windows.Forms.ToolStripMenuItem();
-        this.contextMenuUncheck = new System.Windows.Forms.ToolStripMenuItem();
-        this.bindingSourceView = new System.Windows.Forms.BindingSource(this.components);
-        this.dataGridViewArchive = new HostsFileEditor.Controls.HostsArchiveDataGridView();
-        this.fileNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        this.bindingSourceArchive = new System.Windows.Forms.BindingSource(this.components);
-        this.toolStripArchive = new HostsFileEditor.Controls.ToolStripEx();
-        this.buttonDeleteArchive = new System.Windows.Forms.ToolStripButton();
-        this.buttonLoadArchive = new System.Windows.Forms.ToolStripButton();
-        this.menuStrip = new HostsFileEditor.Controls.MenuStripEx();
-        this.menuFile = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuSave = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuSaveAs = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuArchive = new System.Windows.Forms.ToolStripMenuItem();
-        this.openTextEditor = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuRestoreDefaults = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuDisable = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuImport = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuExit = new System.Windows.Forms.ToolStripMenuItem();
-        this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuRefresh = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuUndo = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuRedo = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuCut = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuCopy = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuPaste = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuDelete = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuDuplicate = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuMoveUp = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuMoveDown = new System.Windows.Forms.ToolStripMenuItem();
-        this.insertRowAboveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-        this.insertRowBelowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-        this.toolStripSeparator30 = new System.Windows.Forms.ToolStripSeparator();
-        this.menuCheck = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuUncheck = new System.Windows.Forms.ToolStripMenuItem();
-        this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuViewArchive = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuFilterComments = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuFilterDisabled = new System.Windows.Forms.ToolStripMenuItem();
-        this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
-        this.menuRemoveSort = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuTools = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuPingIPs = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuRemoveDefaultText = new System.Windows.Forms.ToolStripMenuItem();
-        this.toolStrip = new HostsFileEditor.Controls.ToolStripEx();
-        this.buttonSave = new System.Windows.Forms.ToolStripButton();
-        this.buttonRefresh = new System.Windows.Forms.ToolStripButton();
-        this.buttonDisable = new System.Windows.Forms.ToolStripButton();
-        this.buttonArchive = new System.Windows.Forms.ToolStripButton();
-        this.buttonViewArchive = new System.Windows.Forms.ToolStripButton();
-        this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripLabel();
-        this.buttonFilterComment = new System.Windows.Forms.ToolStripButton();
-        this.buttonFilterDisabled = new System.Windows.Forms.ToolStripButton();
-        this.textFilter = new HostsFileEditor.Controls.ToolStripSpringTextBox();
-        this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-        this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-        this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-        this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-        this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
-        this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
-        this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
-        this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-        this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-        this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-        this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
-        this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
-        this.contextMenuTray = new System.Windows.Forms.ContextMenuStrip(this.components);
-        this.menuContextEdit = new System.Windows.Forms.ToolStripMenuItem();
-        this.menuContextDisable = new System.Windows.Forms.ToolStripMenuItem();
-        this.contextMenuExit = new System.Windows.Forms.ToolStripMenuItem();
-        this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-        this.bindingSourceHostEntries = new System.Windows.Forms.BindingSource(this.components);
-        this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-        this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-        toolStripSeparator22 = new System.Windows.Forms.ToolStripSeparator();
-        toolStripSeparator23 = new System.Windows.Forms.ToolStripSeparator();
-        toolStripSeparator25 = new System.Windows.Forms.ToolStripSeparator();
-        toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-        toolStripSeparator27 = new System.Windows.Forms.ToolStripSeparator();
-        toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
-        toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
-        toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
-        toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
-        toolStripSeparator28 = new System.Windows.Forms.ToolStripSeparator();
-        toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-        toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-        toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-        toolStripSeparator24 = new System.Windows.Forms.ToolStripSeparator();
-        toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
-        menuFilter = new System.Windows.Forms.ToolStripMenuItem();
-        toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
-        toolStripSeparator26 = new System.Windows.Forms.ToolStripSeparator();
-        toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
-        toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
-        toolStripSeparator19 = new System.Windows.Forms.ToolStripSeparator();
-        toolStripSeparator21 = new System.Windows.Forms.ToolStripSeparator();
-        toolStripSeparator20 = new System.Windows.Forms.ToolStripSeparator();
-        toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-        this.toolStripContainer.BottomToolStripPanel.SuspendLayout();
-        this.toolStripContainer.ContentPanel.SuspendLayout();
-        this.toolStripContainer.TopToolStripPanel.SuspendLayout();
-        this.toolStripContainer.SuspendLayout();
-        this.statusStrip.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHostFile)).BeginInit();
-        ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
-        this.splitContainer.Panel1.SuspendLayout();
-        this.splitContainer.Panel2.SuspendLayout();
-        this.splitContainer.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHostsEntries)).BeginInit();
-        this.contextMenuGrid.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)(this.bindingSourceView)).BeginInit();
-        ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArchive)).BeginInit();
-        ((System.ComponentModel.ISupportInitialize)(this.bindingSourceArchive)).BeginInit();
-        this.toolStripArchive.SuspendLayout();
-        this.menuStrip.SuspendLayout();
-        this.toolStrip.SuspendLayout();
-        this.contextMenuTray.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHostEntries)).BeginInit();
-        this.SuspendLayout();
+        ToolStripSeparator toolStripSeparator22;
+        ToolStripSeparator toolStripSeparator23;
+        ToolStripSeparator toolStripSeparator25;
+        ToolStripLabel toolStripLabel1;
+        ToolStripSeparator toolStripSeparator27;
+        ToolStripSeparator toolStripSeparator18;
+        ToolStripSeparator toolStripSeparator14;
+        ToolStripSeparator toolStripSeparator13;
+        ToolStripSeparator toolStripSeparator12;
+        ToolStripSeparator toolStripSeparator28;
+        ToolStripSeparator toolStripSeparator4;
+        ToolStripSeparator toolStripSeparator5;
+        ToolStripSeparator toolStripSeparator6;
+        ToolStripSeparator toolStripSeparator24;
+        ToolStripSeparator toolStripSeparator9;
+        ToolStripMenuItem menuFilter;
+        ToolStripSeparator toolStripSeparator15;
+        ToolStripSeparator toolStripSeparator26;
+        ToolStripSeparator toolStripSeparator16;
+        ToolStripSeparator toolStripSeparator17;
+        ToolStripSeparator toolStripSeparator19;
+        ToolStripSeparator toolStripSeparator21;
+        ToolStripSeparator toolStripSeparator20;
+        ToolStripSeparator toolStripSeparator1;
+        toolStripContainer = new ToolStripContainer();
+        statusStrip = new StatusStrip();
+        labelLineCount = new ToolStripStatusLabel();
+        labelLineCountNumber = new HostsFileEditor.Controls.ToolStripBindableStatusLabel();
+        bindingSourceHostFile = new BindingSource(components);
+        labelHostEntries = new ToolStripStatusLabel();
+        labelHostEntriesCount = new HostsFileEditor.Controls.ToolStripBindableStatusLabel();
+        splitContainer = new SplitContainer();
+        dataGridViewHostsEntries = new HostsFileEditor.Controls.HostsEntryDataGridView();
+        columnValid = new DataGridViewCheckBoxColumn();
+        columnEnabled = new DataGridViewCheckBoxColumn();
+        columnIpAddress = new DataGridViewTextBoxColumn();
+        columnHostnames = new DataGridViewTextBoxColumn();
+        columnComment = new DataGridViewTextBoxColumn();
+        columnUnparsedText = new DataGridViewTextBoxColumn();
+        columnFiller = new DataGridViewTextBoxColumn();
+        contextMenuGrid = new ContextMenuStrip(components);
+        menuContextCut = new ToolStripMenuItem();
+        menuContextCopy = new ToolStripMenuItem();
+        menuContextPaste = new ToolStripMenuItem();
+        toolStripSeparator32 = new ToolStripSeparator();
+        menuContextDuplicate = new ToolStripMenuItem();
+        menuContextDelete = new ToolStripMenuItem();
+        menuContextMoveUp = new ToolStripMenuItem();
+        menuContextMoveDown = new ToolStripMenuItem();
+        menuContextInsertAbove = new ToolStripMenuItem();
+        menuContextInsertBelow = new ToolStripMenuItem();
+        toolStripSeparator31 = new ToolStripSeparator();
+        contextMenuCheck = new ToolStripMenuItem();
+        contextMenuUncheck = new ToolStripMenuItem();
+        bindingSourceView = new BindingSource(components);
+        dataGridViewArchive = new HostsFileEditor.Controls.HostsArchiveDataGridView();
+        fileNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+        bindingSourceArchive = new BindingSource(components);
+        toolStripArchive = new HostsFileEditor.Controls.ToolStripEx();
+        buttonDeleteArchive = new ToolStripButton();
+        buttonLoadArchive = new ToolStripButton();
+        menuStrip = new HostsFileEditor.Controls.MenuStripEx();
+        menuFile = new ToolStripMenuItem();
+        menuSave = new ToolStripMenuItem();
+        menuSaveAs = new ToolStripMenuItem();
+        menuArchive = new ToolStripMenuItem();
+        openTextEditor = new ToolStripMenuItem();
+        menuRestoreDefaults = new ToolStripMenuItem();
+        menuDisable = new ToolStripMenuItem();
+        menuImport = new ToolStripMenuItem();
+        menuExit = new ToolStripMenuItem();
+        editToolStripMenuItem = new ToolStripMenuItem();
+        menuRefresh = new ToolStripMenuItem();
+        menuUndo = new ToolStripMenuItem();
+        menuRedo = new ToolStripMenuItem();
+        menuCut = new ToolStripMenuItem();
+        menuCopy = new ToolStripMenuItem();
+        menuPaste = new ToolStripMenuItem();
+        toolStripSeparator33 = new ToolStripSeparator();
+        menuDuplicate = new ToolStripMenuItem();
+        menuDelete = new ToolStripMenuItem();
+        menuMoveUp = new ToolStripMenuItem();
+        menuMoveDown = new ToolStripMenuItem();
+        insertRowAboveToolStripMenuItem = new ToolStripMenuItem();
+        insertRowBelowToolStripMenuItem = new ToolStripMenuItem();
+        toolStripSeparator30 = new ToolStripSeparator();
+        menuCheck = new ToolStripMenuItem();
+        menuUncheck = new ToolStripMenuItem();
+        viewToolStripMenuItem = new ToolStripMenuItem();
+        menuViewArchive = new ToolStripMenuItem();
+        menuFilterComments = new ToolStripMenuItem();
+        menuFilterDisabled = new ToolStripMenuItem();
+        toolStripSeparator29 = new ToolStripSeparator();
+        menuRemoveSort = new ToolStripMenuItem();
+        menuTools = new ToolStripMenuItem();
+        menuPingIPs = new ToolStripMenuItem();
+        menuRemoveDefaultText = new ToolStripMenuItem();
+        helpToolStripMenuItem = new ToolStripMenuItem();
+        aboutToolStripMenuItem = new ToolStripMenuItem();
+        toolStrip = new HostsFileEditor.Controls.ToolStripEx();
+        buttonSave = new ToolStripButton();
+        buttonRefresh = new ToolStripButton();
+        buttonDisable = new ToolStripButton();
+        buttonArchive = new ToolStripButton();
+        buttonViewArchive = new ToolStripButton();
+        toolStripDropDownButton1 = new ToolStripLabel();
+        buttonFilterComment = new ToolStripButton();
+        buttonFilterDisabled = new ToolStripButton();
+        textFilter = new HostsFileEditor.Controls.ToolStripSpringTextBox();
+        toolStripSeparator2 = new ToolStripSeparator();
+        toolStripSeparator7 = new ToolStripSeparator();
+        toolStripSeparator = new ToolStripSeparator();
+        toolStripSeparator3 = new ToolStripSeparator();
+        toolStripSeparator8 = new ToolStripSeparator();
+        toolStripSeparator10 = new ToolStripSeparator();
+        toolStripSeparator11 = new ToolStripSeparator();
+        toolStripMenuItem1 = new ToolStripMenuItem();
+        toolStripStatusLabel1 = new ToolStripStatusLabel();
+        toolStripButton1 = new ToolStripButton();
+        saveFileDialog = new SaveFileDialog();
+        notifyIcon = new NotifyIcon(components);
+        contextMenuTray = new ContextMenuStrip(components);
+        menuContextEdit = new ToolStripMenuItem();
+        menuContextDisable = new ToolStripMenuItem();
+        contextMenuExit = new ToolStripMenuItem();
+        openFileDialog = new OpenFileDialog();
+        bindingSourceHostEntries = new BindingSource(components);
+        toolStripSeparator22 = new ToolStripSeparator();
+        toolStripSeparator23 = new ToolStripSeparator();
+        toolStripSeparator25 = new ToolStripSeparator();
+        toolStripLabel1 = new ToolStripLabel();
+        toolStripSeparator27 = new ToolStripSeparator();
+        toolStripSeparator18 = new ToolStripSeparator();
+        toolStripSeparator14 = new ToolStripSeparator();
+        toolStripSeparator13 = new ToolStripSeparator();
+        toolStripSeparator12 = new ToolStripSeparator();
+        toolStripSeparator28 = new ToolStripSeparator();
+        toolStripSeparator4 = new ToolStripSeparator();
+        toolStripSeparator5 = new ToolStripSeparator();
+        toolStripSeparator6 = new ToolStripSeparator();
+        toolStripSeparator24 = new ToolStripSeparator();
+        toolStripSeparator9 = new ToolStripSeparator();
+        menuFilter = new ToolStripMenuItem();
+        toolStripSeparator15 = new ToolStripSeparator();
+        toolStripSeparator26 = new ToolStripSeparator();
+        toolStripSeparator16 = new ToolStripSeparator();
+        toolStripSeparator17 = new ToolStripSeparator();
+        toolStripSeparator19 = new ToolStripSeparator();
+        toolStripSeparator21 = new ToolStripSeparator();
+        toolStripSeparator20 = new ToolStripSeparator();
+        toolStripSeparator1 = new ToolStripSeparator();
+        toolStripContainer.BottomToolStripPanel.SuspendLayout();
+        toolStripContainer.ContentPanel.SuspendLayout();
+        toolStripContainer.TopToolStripPanel.SuspendLayout();
+        toolStripContainer.SuspendLayout();
+        statusStrip.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)bindingSourceHostFile).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)splitContainer).BeginInit();
+        splitContainer.Panel1.SuspendLayout();
+        splitContainer.Panel2.SuspendLayout();
+        splitContainer.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)dataGridViewHostsEntries).BeginInit();
+        contextMenuGrid.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)bindingSourceView).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)dataGridViewArchive).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)bindingSourceArchive).BeginInit();
+        toolStripArchive.SuspendLayout();
+        menuStrip.SuspendLayout();
+        toolStrip.SuspendLayout();
+        contextMenuTray.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)bindingSourceHostEntries).BeginInit();
+        SuspendLayout();
         // 
         // toolStripContainer
         // 
         // 
         // toolStripContainer.BottomToolStripPanel
         // 
-        this.toolStripContainer.BottomToolStripPanel.Controls.Add(this.statusStrip);
+        toolStripContainer.BottomToolStripPanel.Controls.Add(statusStrip);
         // 
         // toolStripContainer.ContentPanel
         // 
-        this.toolStripContainer.ContentPanel.Controls.Add(this.splitContainer);
-        resources.ApplyResources(this.toolStripContainer.ContentPanel, "toolStripContainer.ContentPanel");
-        resources.ApplyResources(this.toolStripContainer, "toolStripContainer");
-        this.toolStripContainer.Name = "toolStripContainer";
+        toolStripContainer.ContentPanel.Controls.Add(splitContainer);
+        resources.ApplyResources(toolStripContainer.ContentPanel, "toolStripContainer.ContentPanel");
+        resources.ApplyResources(toolStripContainer, "toolStripContainer");
+        toolStripContainer.Name = "toolStripContainer";
         // 
         // toolStripContainer.TopToolStripPanel
         // 
-        this.toolStripContainer.TopToolStripPanel.Controls.Add(this.menuStrip);
-        this.toolStripContainer.TopToolStripPanel.Controls.Add(this.toolStrip);
+        toolStripContainer.TopToolStripPanel.Controls.Add(menuStrip);
+        toolStripContainer.TopToolStripPanel.Controls.Add(toolStrip);
         // 
         // statusStrip
         // 
-        resources.ApplyResources(this.statusStrip, "statusStrip");
-        this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-        this.labelLineCount,
-        this.labelLineCountNumber,
-        this.labelHostEntries,
-        this.labelHostEntriesCount});
-        this.statusStrip.Name = "statusStrip";
+        resources.ApplyResources(statusStrip, "statusStrip");
+        statusStrip.Items.AddRange(new ToolStripItem[] { labelLineCount, labelLineCountNumber, labelHostEntries, labelHostEntriesCount });
+        statusStrip.Name = "statusStrip";
         // 
         // labelLineCount
         // 
-        this.labelLineCount.Name = "labelLineCount";
-        resources.ApplyResources(this.labelLineCount, "labelLineCount");
+        labelLineCount.Name = "labelLineCount";
+        resources.ApplyResources(labelLineCount, "labelLineCount");
         // 
         // labelLineCountNumber
         // 
-        this.labelLineCountNumber.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHostFile, "LineCount", true));
-        this.labelLineCountNumber.Name = "labelLineCountNumber";
-        resources.ApplyResources(this.labelLineCountNumber, "labelLineCountNumber");
+        labelLineCountNumber.DataBindings.Add(new Binding("Text", bindingSourceHostFile, "LineCount", true));
+        labelLineCountNumber.Name = "labelLineCountNumber";
+        resources.ApplyResources(labelLineCountNumber, "labelLineCountNumber");
         // 
         // bindingSourceHostFile
         // 
-        this.bindingSourceHostFile.DataSource = typeof(HostsFileEditor.HostsFile);
+        bindingSourceHostFile.DataSource = typeof(HostsFile);
         // 
         // labelHostEntries
         // 
-        this.labelHostEntries.Name = "labelHostEntries";
-        resources.ApplyResources(this.labelHostEntries, "labelHostEntries");
+        labelHostEntries.Name = "labelHostEntries";
+        resources.ApplyResources(labelHostEntries, "labelHostEntries");
         // 
         // labelHostEntriesCount
         // 
-        this.labelHostEntriesCount.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHostFile, "EnabledCount", true));
-        this.labelHostEntriesCount.Name = "labelHostEntriesCount";
-        resources.ApplyResources(this.labelHostEntriesCount, "labelHostEntriesCount");
+        labelHostEntriesCount.DataBindings.Add(new Binding("Text", bindingSourceHostFile, "EnabledCount", true));
+        labelHostEntriesCount.Name = "labelHostEntriesCount";
+        resources.ApplyResources(labelHostEntriesCount, "labelHostEntriesCount");
         // 
         // splitContainer
         // 
-        resources.ApplyResources(this.splitContainer, "splitContainer");
-        this.splitContainer.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
-        this.splitContainer.Name = "splitContainer";
+        resources.ApplyResources(splitContainer, "splitContainer");
+        splitContainer.FixedPanel = FixedPanel.Panel2;
+        splitContainer.Name = "splitContainer";
         // 
         // splitContainer.Panel1
         // 
-        this.splitContainer.Panel1.Controls.Add(this.dataGridViewHostsEntries);
+        splitContainer.Panel1.Controls.Add(dataGridViewHostsEntries);
         // 
         // splitContainer.Panel2
         // 
-        this.splitContainer.Panel2.Controls.Add(this.dataGridViewArchive);
-        this.splitContainer.Panel2.Controls.Add(this.toolStripArchive);
+        splitContainer.Panel2.Controls.Add(dataGridViewArchive);
+        splitContainer.Panel2.Controls.Add(toolStripArchive);
         // 
         // dataGridViewHostsEntries
         // 
-        this.dataGridViewHostsEntries.AllowDrop = true;
-        this.dataGridViewHostsEntries.AllowUserToOrderColumns = true;
-        this.dataGridViewHostsEntries.AllowUserToResizeRows = false;
-        this.dataGridViewHostsEntries.AutoGenerateColumns = false;
-        this.dataGridViewHostsEntries.BorderStyle = System.Windows.Forms.BorderStyle.None;
-        this.dataGridViewHostsEntries.ClearSort = null;
-        this.dataGridViewHostsEntries.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-        this.dataGridViewHostsEntries.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-        this.columnValid,
-        this.columnEnabled,
-        this.columnIpAddress,
-        this.columnHostnames,
-        this.columnComment,
-        this.columnUnparsedText,
-        this.columnFiller});
-        this.dataGridViewHostsEntries.ContextMenuStrip = this.contextMenuGrid;
-        this.dataGridViewHostsEntries.DataSource = this.bindingSourceView;
-        resources.ApplyResources(this.dataGridViewHostsEntries, "dataGridViewHostsEntries");
-        this.dataGridViewHostsEntries.Name = "dataGridViewHostsEntries";
+        dataGridViewHostsEntries.AllowDrop = true;
+        dataGridViewHostsEntries.AllowUserToOrderColumns = true;
+        dataGridViewHostsEntries.AllowUserToResizeRows = false;
+        dataGridViewHostsEntries.AutoGenerateColumns = false;
+        dataGridViewHostsEntries.BorderStyle = BorderStyle.None;
+        dataGridViewHostsEntries.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+        dataGridViewHostsEntries.Columns.AddRange(new DataGridViewColumn[] { columnValid, columnEnabled, columnIpAddress, columnHostnames, columnComment, columnUnparsedText, columnFiller });
+        dataGridViewHostsEntries.ContextMenuStrip = contextMenuGrid;
+        dataGridViewHostsEntries.DataSource = bindingSourceView;
+        resources.ApplyResources(dataGridViewHostsEntries, "dataGridViewHostsEntries");
+        dataGridViewHostsEntries.Name = "dataGridViewHostsEntries";
         // 
         // columnValid
         // 
-        this.columnValid.DataPropertyName = "Valid";
-        resources.ApplyResources(this.columnValid, "columnValid");
-        this.columnValid.Name = "columnValid";
-        this.columnValid.ReadOnly = true;
-        this.columnValid.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+        columnValid.DataPropertyName = "Valid";
+        resources.ApplyResources(columnValid, "columnValid");
+        columnValid.Name = "columnValid";
+        columnValid.ReadOnly = true;
+        columnValid.SortMode = DataGridViewColumnSortMode.Automatic;
         // 
         // columnEnabled
         // 
-        this.columnEnabled.DataPropertyName = "Enabled";
-        resources.ApplyResources(this.columnEnabled, "columnEnabled");
-        this.columnEnabled.Name = "columnEnabled";
-        this.columnEnabled.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+        columnEnabled.DataPropertyName = "Enabled";
+        resources.ApplyResources(columnEnabled, "columnEnabled");
+        columnEnabled.Name = "columnEnabled";
+        columnEnabled.SortMode = DataGridViewColumnSortMode.Automatic;
         // 
         // columnIpAddress
         // 
-        this.columnIpAddress.DataPropertyName = "IpAddress";
-        resources.ApplyResources(this.columnIpAddress, "columnIpAddress");
-        this.columnIpAddress.Name = "columnIpAddress";
+        columnIpAddress.DataPropertyName = "IpAddress";
+        resources.ApplyResources(columnIpAddress, "columnIpAddress");
+        columnIpAddress.Name = "columnIpAddress";
         // 
         // columnHostnames
         // 
-        this.columnHostnames.DataPropertyName = "HostNames";
-        resources.ApplyResources(this.columnHostnames, "columnHostnames");
-        this.columnHostnames.Name = "columnHostnames";
+        columnHostnames.DataPropertyName = "HostNames";
+        resources.ApplyResources(columnHostnames, "columnHostnames");
+        columnHostnames.Name = "columnHostnames";
         // 
         // columnComment
         // 
-        this.columnComment.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-        this.columnComment.DataPropertyName = "Comment";
-        resources.ApplyResources(this.columnComment, "columnComment");
-        this.columnComment.Name = "columnComment";
+        columnComment.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+        columnComment.DataPropertyName = "Comment";
+        resources.ApplyResources(columnComment, "columnComment");
+        columnComment.Name = "columnComment";
         // 
         // columnUnparsedText
         // 
-        this.columnUnparsedText.DataPropertyName = "UnparsedText";
-        resources.ApplyResources(this.columnUnparsedText, "columnUnparsedText");
-        this.columnUnparsedText.Name = "columnUnparsedText";
-        this.columnUnparsedText.ReadOnly = true;
+        columnUnparsedText.DataPropertyName = "UnparsedText";
+        resources.ApplyResources(columnUnparsedText, "columnUnparsedText");
+        columnUnparsedText.Name = "columnUnparsedText";
+        columnUnparsedText.ReadOnly = true;
         // 
         // columnFiller
         // 
-        this.columnFiller.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-        resources.ApplyResources(this.columnFiller, "columnFiller");
-        this.columnFiller.Name = "columnFiller";
-        this.columnFiller.ReadOnly = true;
+        columnFiller.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+        resources.ApplyResources(columnFiller, "columnFiller");
+        columnFiller.Name = "columnFiller";
+        columnFiller.ReadOnly = true;
         // 
         // contextMenuGrid
         // 
-        this.contextMenuGrid.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-        this.menuContextCut,
-        this.menuContextCopy,
-        this.menuContextPaste,
-        this.toolStripSeparator32,
-        this.menuContextDuplicate,
-        toolStripSeparator22,
-        this.menuContextDelete,
-        toolStripSeparator23,
-        this.menuContextMoveUp,
-        this.menuContextMoveDown,
-        toolStripSeparator25,
-        this.menuContextInsertAbove,
-        this.menuContextInsertBelow,
-        this.toolStripSeparator31,
-        this.contextMenuCheck,
-        this.contextMenuUncheck});
-        this.contextMenuGrid.Name = "contextMenuGrid";
-        resources.ApplyResources(this.contextMenuGrid, "contextMenuGrid");
+        contextMenuGrid.Items.AddRange(new ToolStripItem[] { menuContextCut, menuContextCopy, menuContextPaste, toolStripSeparator32, menuContextDuplicate, toolStripSeparator22, menuContextDelete, toolStripSeparator23, menuContextMoveUp, menuContextMoveDown, toolStripSeparator25, menuContextInsertAbove, menuContextInsertBelow, toolStripSeparator31, contextMenuCheck, contextMenuUncheck });
+        contextMenuGrid.Name = "contextMenuGrid";
+        resources.ApplyResources(contextMenuGrid, "contextMenuGrid");
         // 
         // menuContextCut
         // 
-        this.menuContextCut.Image = global::HostsFileEditor.Properties.Resources.Cut;
-        this.menuContextCut.Name = "menuContextCut";
-        resources.ApplyResources(this.menuContextCut, "menuContextCut");
-        this.menuContextCut.Click += new System.EventHandler(this.OnCutClick);
+        menuContextCut.Image = Properties.Resources.Cut;
+        menuContextCut.Name = "menuContextCut";
+        resources.ApplyResources(menuContextCut, "menuContextCut");
+        menuContextCut.Click += OnCutClick;
         // 
         // menuContextCopy
         // 
-        this.menuContextCopy.Image = global::HostsFileEditor.Properties.Resources.Copy;
-        this.menuContextCopy.Name = "menuContextCopy";
-        resources.ApplyResources(this.menuContextCopy, "menuContextCopy");
-        this.menuContextCopy.Click += new System.EventHandler(this.OnCopyClick);
+        menuContextCopy.Image = Properties.Resources.Copy;
+        menuContextCopy.Name = "menuContextCopy";
+        resources.ApplyResources(menuContextCopy, "menuContextCopy");
+        menuContextCopy.Click += OnCopyClick;
         // 
         // menuContextPaste
         // 
-        this.menuContextPaste.Image = global::HostsFileEditor.Properties.Resources.Paste;
-        this.menuContextPaste.Name = "menuContextPaste";
-        resources.ApplyResources(this.menuContextPaste, "menuContextPaste");
-        this.menuContextPaste.Click += new System.EventHandler(this.OnPasteClick);
+        menuContextPaste.Image = Properties.Resources.Paste;
+        menuContextPaste.Name = "menuContextPaste";
+        resources.ApplyResources(menuContextPaste, "menuContextPaste");
+        menuContextPaste.Click += OnPasteClick;
+        // 
+        // toolStripSeparator32
+        // 
+        toolStripSeparator32.Name = "toolStripSeparator32";
+        resources.ApplyResources(toolStripSeparator32, "toolStripSeparator32");
+        // 
+        // menuContextDuplicate
+        // 
+        menuContextDuplicate.Image = Properties.Resources.Duplicate;
+        menuContextDuplicate.Name = "menuContextDuplicate";
+        resources.ApplyResources(menuContextDuplicate, "menuContextDuplicate");
+        menuContextDuplicate.Click += OnDuplicateClick;
         // 
         // toolStripSeparator22
         // 
@@ -416,17 +400,10 @@ partial class MainForm
         // 
         // menuContextDelete
         // 
-        this.menuContextDelete.Image = global::HostsFileEditor.Properties.Resources.Delete;
-        this.menuContextDelete.Name = "menuContextDelete";
-        resources.ApplyResources(this.menuContextDelete, "menuContextDelete");
-        this.menuContextDelete.Click += new System.EventHandler(this.OnDeleteClick);
-        // 
-        // menuContextDuplicate
-        // 
-        this.menuContextDuplicate.Image = global::HostsFileEditor.Properties.Resources.Duplicate;
-        this.menuContextDuplicate.Name = "menuContextDuplicate";
-        resources.ApplyResources(this.menuContextDuplicate, "menuContextDuplicate");
-        this.menuContextDuplicate.Click += new System.EventHandler(this.OnDuplicateClick);
+        menuContextDelete.Image = Properties.Resources.Delete;
+        menuContextDelete.Name = "menuContextDelete";
+        resources.ApplyResources(menuContextDelete, "menuContextDelete");
+        menuContextDelete.Click += OnDeleteClick;
         // 
         // toolStripSeparator23
         // 
@@ -435,17 +412,17 @@ partial class MainForm
         // 
         // menuContextMoveUp
         // 
-        this.menuContextMoveUp.Image = global::HostsFileEditor.Properties.Resources.MoveUp;
-        this.menuContextMoveUp.Name = "menuContextMoveUp";
-        resources.ApplyResources(this.menuContextMoveUp, "menuContextMoveUp");
-        this.menuContextMoveUp.Click += new System.EventHandler(this.OnMoveUpClick);
+        menuContextMoveUp.Image = Properties.Resources.MoveUp;
+        menuContextMoveUp.Name = "menuContextMoveUp";
+        resources.ApplyResources(menuContextMoveUp, "menuContextMoveUp");
+        menuContextMoveUp.Click += OnMoveUpClick;
         // 
         // menuContextMoveDown
         // 
-        this.menuContextMoveDown.Image = global::HostsFileEditor.Properties.Resources.MoveDown;
-        this.menuContextMoveDown.Name = "menuContextMoveDown";
-        resources.ApplyResources(this.menuContextMoveDown, "menuContextMoveDown");
-        this.menuContextMoveDown.Click += new System.EventHandler(this.OnMoveDownClick);
+        menuContextMoveDown.Image = Properties.Resources.MoveDown;
+        menuContextMoveDown.Name = "menuContextMoveDown";
+        resources.ApplyResources(menuContextMoveDown, "menuContextMoveDown");
+        menuContextMoveDown.Click += OnMoveDownClick;
         // 
         // toolStripSeparator25
         // 
@@ -454,92 +431,82 @@ partial class MainForm
         // 
         // menuContextInsertAbove
         // 
-        this.menuContextInsertAbove.Image = global::HostsFileEditor.Properties.Resources.InsertAbove;
-        this.menuContextInsertAbove.Name = "menuContextInsertAbove";
-        resources.ApplyResources(this.menuContextInsertAbove, "menuContextInsertAbove");
-        this.menuContextInsertAbove.Click += new System.EventHandler(this.OnInsertAboveClick);
+        menuContextInsertAbove.Image = Properties.Resources.InsertAbove;
+        menuContextInsertAbove.Name = "menuContextInsertAbove";
+        resources.ApplyResources(menuContextInsertAbove, "menuContextInsertAbove");
+        menuContextInsertAbove.Click += OnInsertAboveClick;
         // 
         // menuContextInsertBelow
         // 
-        this.menuContextInsertBelow.Image = global::HostsFileEditor.Properties.Resources.InsertBelow;
-        this.menuContextInsertBelow.Name = "menuContextInsertBelow";
-        resources.ApplyResources(this.menuContextInsertBelow, "menuContextInsertBelow");
-        this.menuContextInsertBelow.Click += new System.EventHandler(this.OnInsertBelowClick);
+        menuContextInsertBelow.Image = Properties.Resources.InsertBelow;
+        menuContextInsertBelow.Name = "menuContextInsertBelow";
+        resources.ApplyResources(menuContextInsertBelow, "menuContextInsertBelow");
+        menuContextInsertBelow.Click += OnInsertBelowClick;
         // 
         // toolStripSeparator31
         // 
-        this.toolStripSeparator31.Name = "toolStripSeparator31";
-        resources.ApplyResources(this.toolStripSeparator31, "toolStripSeparator31");
-        // 
-        // toolStripSeparator32
-        // 
-        this.toolStripSeparator32.Name = "toolStripSeparator32";
-        resources.ApplyResources(this.toolStripSeparator31, "toolStripSeparator32");
+        toolStripSeparator31.Name = "toolStripSeparator31";
+        resources.ApplyResources(toolStripSeparator31, "toolStripSeparator31");
         // 
         // contextMenuCheck
         // 
-        this.contextMenuCheck.Image = global::HostsFileEditor.Properties.Resources.Check;
-        resources.ApplyResources(this.contextMenuCheck, "contextMenuCheck");
-        this.contextMenuCheck.Name = "contextMenuCheck";
-        this.contextMenuCheck.Click += new System.EventHandler(this.OnCheckClick);
+        contextMenuCheck.Image = Properties.Resources.Check;
+        resources.ApplyResources(contextMenuCheck, "contextMenuCheck");
+        contextMenuCheck.Name = "contextMenuCheck";
+        contextMenuCheck.Click += OnCheckClick;
         // 
         // contextMenuUncheck
         // 
-        this.contextMenuUncheck.Image = global::HostsFileEditor.Properties.Resources.Uncheck;
-        resources.ApplyResources(this.contextMenuUncheck, "contextMenuUncheck");
-        this.contextMenuUncheck.Name = "contextMenuUncheck";
-        this.contextMenuUncheck.Click += new System.EventHandler(this.OnUncheckClick);
+        contextMenuUncheck.Image = Properties.Resources.Uncheck;
+        resources.ApplyResources(contextMenuUncheck, "contextMenuUncheck");
+        contextMenuUncheck.Name = "contextMenuUncheck";
+        contextMenuUncheck.Click += OnUncheckClick;
         // 
         // bindingSourceView
         // 
-        this.bindingSourceView.DataSource = typeof(HostsFileEditor.HostsEntryList);
+        bindingSourceView.DataSource = typeof(HostsEntryList);
         // 
         // dataGridViewArchive
         // 
-        this.dataGridViewArchive.AllowUserToAddRows = false;
-        this.dataGridViewArchive.AllowUserToDeleteRows = false;
-        this.dataGridViewArchive.AllowUserToResizeColumns = false;
-        this.dataGridViewArchive.AllowUserToResizeRows = false;
-        this.dataGridViewArchive.AutoGenerateColumns = false;
-        this.dataGridViewArchive.BackgroundColor = System.Drawing.Color.White;
-        this.dataGridViewArchive.BorderStyle = System.Windows.Forms.BorderStyle.None;
-        this.dataGridViewArchive.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-        this.dataGridViewArchive.ColumnHeadersVisible = false;
-        this.dataGridViewArchive.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-        this.fileNameDataGridViewTextBoxColumn});
-        this.dataGridViewArchive.DataSource = this.bindingSourceArchive;
-        resources.ApplyResources(this.dataGridViewArchive, "dataGridViewArchive");
-        this.dataGridViewArchive.GridColor = System.Drawing.Color.White;
-        this.dataGridViewArchive.MultiSelect = false;
-        this.dataGridViewArchive.Name = "dataGridViewArchive";
-        this.dataGridViewArchive.ReadOnly = true;
-        this.dataGridViewArchive.RowHeadersVisible = false;
-        this.dataGridViewArchive.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+        dataGridViewArchive.AllowUserToAddRows = false;
+        dataGridViewArchive.AllowUserToDeleteRows = false;
+        dataGridViewArchive.AllowUserToResizeColumns = false;
+        dataGridViewArchive.AllowUserToResizeRows = false;
+        dataGridViewArchive.AutoGenerateColumns = false;
+        dataGridViewArchive.BackgroundColor = Color.White;
+        dataGridViewArchive.BorderStyle = BorderStyle.None;
+        dataGridViewArchive.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+        dataGridViewArchive.ColumnHeadersVisible = false;
+        dataGridViewArchive.Columns.AddRange(new DataGridViewColumn[] { fileNameDataGridViewTextBoxColumn });
+        dataGridViewArchive.DataSource = bindingSourceArchive;
+        resources.ApplyResources(dataGridViewArchive, "dataGridViewArchive");
+        dataGridViewArchive.GridColor = Color.White;
+        dataGridViewArchive.MultiSelect = false;
+        dataGridViewArchive.Name = "dataGridViewArchive";
+        dataGridViewArchive.ReadOnly = true;
+        dataGridViewArchive.RowHeadersVisible = false;
+        dataGridViewArchive.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         // 
         // fileNameDataGridViewTextBoxColumn
         // 
-        this.fileNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-        this.fileNameDataGridViewTextBoxColumn.DataPropertyName = "FileName";
-        resources.ApplyResources(this.fileNameDataGridViewTextBoxColumn, "fileNameDataGridViewTextBoxColumn");
-        this.fileNameDataGridViewTextBoxColumn.Name = "fileNameDataGridViewTextBoxColumn";
-        this.fileNameDataGridViewTextBoxColumn.ReadOnly = true;
+        fileNameDataGridViewTextBoxColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+        fileNameDataGridViewTextBoxColumn.DataPropertyName = "FileName";
+        resources.ApplyResources(fileNameDataGridViewTextBoxColumn, "fileNameDataGridViewTextBoxColumn");
+        fileNameDataGridViewTextBoxColumn.Name = "fileNameDataGridViewTextBoxColumn";
+        fileNameDataGridViewTextBoxColumn.ReadOnly = true;
         // 
         // bindingSourceArchive
         // 
-        this.bindingSourceArchive.AllowNew = false;
-        this.bindingSourceArchive.DataSource = typeof(HostsFileEditor.HostsArchiveList);
+        bindingSourceArchive.AllowNew = false;
+        bindingSourceArchive.DataSource = typeof(HostsArchiveList);
         // 
         // toolStripArchive
         // 
-        this.toolStripArchive.ClickThrough = true;
-        this.toolStripArchive.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-        this.toolStripArchive.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-        toolStripLabel1,
-        toolStripSeparator27,
-        this.buttonDeleteArchive,
-        this.buttonLoadArchive});
-        resources.ApplyResources(this.toolStripArchive, "toolStripArchive");
-        this.toolStripArchive.Name = "toolStripArchive";
+        toolStripArchive.ClickThrough = true;
+        toolStripArchive.GripStyle = ToolStripGripStyle.Hidden;
+        toolStripArchive.Items.AddRange(new ToolStripItem[] { toolStripLabel1, toolStripSeparator27, buttonDeleteArchive, buttonLoadArchive });
+        resources.ApplyResources(toolStripArchive, "toolStripArchive");
+        toolStripArchive.Name = "toolStripArchive";
         // 
         // toolStripLabel1
         // 
@@ -553,64 +520,47 @@ partial class MainForm
         // 
         // buttonDeleteArchive
         // 
-        this.buttonDeleteArchive.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-        this.buttonDeleteArchive.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-        this.buttonDeleteArchive.Image = global::HostsFileEditor.Properties.Resources.Delete;
-        resources.ApplyResources(this.buttonDeleteArchive, "buttonDeleteArchive");
-        this.buttonDeleteArchive.Name = "buttonDeleteArchive";
-        this.buttonDeleteArchive.Click += new System.EventHandler(this.OnArchiveDeleteClick);
+        buttonDeleteArchive.Alignment = ToolStripItemAlignment.Right;
+        buttonDeleteArchive.DisplayStyle = ToolStripItemDisplayStyle.Image;
+        buttonDeleteArchive.Image = Properties.Resources.Delete;
+        resources.ApplyResources(buttonDeleteArchive, "buttonDeleteArchive");
+        buttonDeleteArchive.Name = "buttonDeleteArchive";
+        buttonDeleteArchive.Click += OnArchiveDeleteClick;
         // 
         // buttonLoadArchive
         // 
-        this.buttonLoadArchive.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-        this.buttonLoadArchive.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-        this.buttonLoadArchive.Image = global::HostsFileEditor.Properties.Resources.LoadArchive;
-        resources.ApplyResources(this.buttonLoadArchive, "buttonLoadArchive");
-        this.buttonLoadArchive.Name = "buttonLoadArchive";
-        this.buttonLoadArchive.Click += new System.EventHandler(this.OnArchiveLoadClick);
+        buttonLoadArchive.Alignment = ToolStripItemAlignment.Right;
+        buttonLoadArchive.DisplayStyle = ToolStripItemDisplayStyle.Image;
+        buttonLoadArchive.Image = Properties.Resources.LoadArchive;
+        resources.ApplyResources(buttonLoadArchive, "buttonLoadArchive");
+        buttonLoadArchive.Name = "buttonLoadArchive";
+        buttonLoadArchive.Click += OnArchiveLoadClick;
         // 
         // menuStrip
         // 
-        this.menuStrip.ClickThrough = true;
-        resources.ApplyResources(this.menuStrip, "menuStrip");
-        this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-        this.menuFile,
-        this.editToolStripMenuItem,
-        this.viewToolStripMenuItem,
-        this.menuTools,
-        this.helpToolStripMenuItem});
-        this.menuStrip.Name = "menuStrip";
+        menuStrip.ClickThrough = true;
+        resources.ApplyResources(menuStrip, "menuStrip");
+        menuStrip.Items.AddRange(new ToolStripItem[] { menuFile, editToolStripMenuItem, viewToolStripMenuItem, menuTools, helpToolStripMenuItem });
+        menuStrip.Name = "menuStrip";
         // 
         // menuFile
         // 
-        this.menuFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-        this.menuSave,
-        this.menuSaveAs,
-        toolStripSeparator18,
-        this.menuArchive,
-        toolStripSeparator14,
-        this.openTextEditor,
-        this.menuRestoreDefaults,
-        this.menuDisable,
-        toolStripSeparator13,
-        this.menuImport,
-        toolStripSeparator12,
-        this.menuExit});
-        this.menuFile.Name = "menuFile";
-        resources.ApplyResources(this.menuFile, "menuFile");
+        menuFile.DropDownItems.AddRange(new ToolStripItem[] { menuSave, menuSaveAs, toolStripSeparator18, menuArchive, toolStripSeparator14, openTextEditor, menuRestoreDefaults, menuDisable, toolStripSeparator13, menuImport, toolStripSeparator12, menuExit });
+        menuFile.Name = "menuFile";
+        resources.ApplyResources(menuFile, "menuFile");
         // 
         // menuSave
         // 
-        this.menuSave.Image = global::HostsFileEditor.Properties.Resources.Save;
-        this.menuSave.Name = "menuSave";
-        resources.ApplyResources(this.menuSave, "menuSave");
-        this.menuSave.Click += new System.EventHandler(this.OnSaveClick);
+        menuSave.Image = Properties.Resources.Save;
+        menuSave.Name = "menuSave";
+        resources.ApplyResources(menuSave, "menuSave");
+        menuSave.Click += OnSaveClick;
         // 
         // menuSaveAs
         // 
-        this.menuSaveAs.Name = "menuSaveAs";
-        resources.ApplyResources(this.menuSaveAs, "menuSaveAs");
-        this.menuSaveAs.Click += new System.EventHandler(this.OnSaveAsClick);
+        menuSaveAs.Name = "menuSaveAs";
+        resources.ApplyResources(menuSaveAs, "menuSaveAs");
+        menuSaveAs.Click += OnSaveAsClick;
         // 
         // toolStripSeparator18
         // 
@@ -619,10 +569,10 @@ partial class MainForm
         // 
         // menuArchive
         // 
-        this.menuArchive.Image = global::HostsFileEditor.Properties.Resources.Archive;
-        this.menuArchive.Name = "menuArchive";
-        resources.ApplyResources(this.menuArchive, "menuArchive");
-        this.menuArchive.Click += new System.EventHandler(this.OnArchiveClick);
+        menuArchive.Image = Properties.Resources.Archive;
+        menuArchive.Name = "menuArchive";
+        resources.ApplyResources(menuArchive, "menuArchive");
+        menuArchive.Click += OnArchiveClick;
         // 
         // toolStripSeparator14
         // 
@@ -631,22 +581,22 @@ partial class MainForm
         // 
         // openTextEditor
         // 
-        this.openTextEditor.Name = "openTextEditor";
-        resources.ApplyResources(this.openTextEditor, "openTextEditor");
-        this.openTextEditor.Click += new System.EventHandler(this.OnOpenTextEditorClick);
+        openTextEditor.Name = "openTextEditor";
+        resources.ApplyResources(openTextEditor, "openTextEditor");
+        openTextEditor.Click += OnOpenTextEditorClick;
         // 
         // menuRestoreDefaults
         // 
-        this.menuRestoreDefaults.Name = "menuRestoreDefaults";
-        resources.ApplyResources(this.menuRestoreDefaults, "menuRestoreDefaults");
-        this.menuRestoreDefaults.Click += new System.EventHandler(this.OnRestoreClick);
+        menuRestoreDefaults.Name = "menuRestoreDefaults";
+        resources.ApplyResources(menuRestoreDefaults, "menuRestoreDefaults");
+        menuRestoreDefaults.Click += OnRestoreClick;
         // 
         // menuDisable
         // 
-        this.menuDisable.Image = global::HostsFileEditor.Properties.Resources.Disable;
-        this.menuDisable.Name = "menuDisable";
-        resources.ApplyResources(this.menuDisable, "menuDisable");
-        this.menuDisable.Click += new System.EventHandler(this.OnDisableHostsClick);
+        menuDisable.Image = Properties.Resources.Disable;
+        menuDisable.Name = "menuDisable";
+        resources.ApplyResources(menuDisable, "menuDisable");
+        menuDisable.Click += OnDisableHostsClick;
         // 
         // toolStripSeparator13
         // 
@@ -655,10 +605,10 @@ partial class MainForm
         // 
         // menuImport
         // 
-        this.menuImport.Image = global::HostsFileEditor.Properties.Resources.Import;
-        this.menuImport.Name = "menuImport";
-        resources.ApplyResources(this.menuImport, "menuImport");
-        this.menuImport.Click += new System.EventHandler(this.OnImportClick);
+        menuImport.Image = Properties.Resources.Import;
+        menuImport.Name = "menuImport";
+        resources.ApplyResources(menuImport, "menuImport");
+        menuImport.Click += OnImportClick;
         // 
         // toolStripSeparator12
         // 
@@ -667,43 +617,22 @@ partial class MainForm
         // 
         // menuExit
         // 
-        this.menuExit.Name = "menuExit";
-        resources.ApplyResources(this.menuExit, "menuExit");
-        this.menuExit.Click += new System.EventHandler(this.OnExitClick);
+        menuExit.Name = "menuExit";
+        resources.ApplyResources(menuExit, "menuExit");
+        menuExit.Click += OnExitClick;
         // 
         // editToolStripMenuItem
         // 
-        this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-        this.menuRefresh,
-        toolStripSeparator28,
-        this.menuUndo,
-        this.menuRedo,
-        toolStripSeparator4,
-        this.menuCut,
-        this.menuCopy,
-        this.menuPaste,
-        toolStripSeparator33,
-        this.menuDuplicate,
-        toolStripSeparator5,
-        this.menuDelete,
-        toolStripSeparator6,
-        this.menuMoveUp,
-        this.menuMoveDown,
-        toolStripSeparator24,
-        this.insertRowAboveToolStripMenuItem,
-        this.insertRowBelowToolStripMenuItem,
-        this.toolStripSeparator30,
-        this.menuCheck,
-        this.menuUncheck});
-        this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-        resources.ApplyResources(this.editToolStripMenuItem, "editToolStripMenuItem");
+        editToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { menuRefresh, toolStripSeparator28, menuUndo, menuRedo, toolStripSeparator4, menuCut, menuCopy, menuPaste, toolStripSeparator33, menuDuplicate, toolStripSeparator5, menuDelete, toolStripSeparator6, menuMoveUp, menuMoveDown, toolStripSeparator24, insertRowAboveToolStripMenuItem, insertRowBelowToolStripMenuItem, toolStripSeparator30, menuCheck, menuUncheck });
+        editToolStripMenuItem.Name = "editToolStripMenuItem";
+        resources.ApplyResources(editToolStripMenuItem, "editToolStripMenuItem");
         // 
         // menuRefresh
         // 
-        this.menuRefresh.Image = global::HostsFileEditor.Properties.Resources.Refresh;
-        resources.ApplyResources(this.menuRefresh, "menuRefresh");
-        this.menuRefresh.Name = "menuRefresh";
-        this.menuRefresh.Click += new System.EventHandler(this.OnRefreshClick);
+        menuRefresh.Image = Properties.Resources.Refresh;
+        resources.ApplyResources(menuRefresh, "menuRefresh");
+        menuRefresh.Name = "menuRefresh";
+        menuRefresh.Click += OnRefreshClick;
         // 
         // toolStripSeparator28
         // 
@@ -712,17 +641,17 @@ partial class MainForm
         // 
         // menuUndo
         // 
-        this.menuUndo.Image = global::HostsFileEditor.Properties.Resources.Undo;
-        this.menuUndo.Name = "menuUndo";
-        resources.ApplyResources(this.menuUndo, "menuUndo");
-        this.menuUndo.Click += new System.EventHandler(this.OnUndoClick);
+        menuUndo.Image = Properties.Resources.Undo;
+        menuUndo.Name = "menuUndo";
+        resources.ApplyResources(menuUndo, "menuUndo");
+        menuUndo.Click += OnUndoClick;
         // 
         // menuRedo
         // 
-        this.menuRedo.Image = global::HostsFileEditor.Properties.Resources.Redo;
-        this.menuRedo.Name = "menuRedo";
-        resources.ApplyResources(this.menuRedo, "menuRedo");
-        this.menuRedo.Click += new System.EventHandler(this.OnRedoClick);
+        menuRedo.Image = Properties.Resources.Redo;
+        menuRedo.Name = "menuRedo";
+        resources.ApplyResources(menuRedo, "menuRedo");
+        menuRedo.Click += OnRedoClick;
         // 
         // toolStripSeparator4
         // 
@@ -731,24 +660,36 @@ partial class MainForm
         // 
         // menuCut
         // 
-        this.menuCut.Image = global::HostsFileEditor.Properties.Resources.Cut;
-        this.menuCut.Name = "menuCut";
-        resources.ApplyResources(this.menuCut, "menuCut");
-        this.menuCut.Click += new System.EventHandler(this.OnCutClick);
+        menuCut.Image = Properties.Resources.Cut;
+        menuCut.Name = "menuCut";
+        resources.ApplyResources(menuCut, "menuCut");
+        menuCut.Click += OnCutClick;
         // 
         // menuCopy
         // 
-        this.menuCopy.Image = global::HostsFileEditor.Properties.Resources.Copy;
-        this.menuCopy.Name = "menuCopy";
-        resources.ApplyResources(this.menuCopy, "menuCopy");
-        this.menuCopy.Click += new System.EventHandler(this.OnCopyClick);
+        menuCopy.Image = Properties.Resources.Copy;
+        menuCopy.Name = "menuCopy";
+        resources.ApplyResources(menuCopy, "menuCopy");
+        menuCopy.Click += OnCopyClick;
         // 
         // menuPaste
         // 
-        this.menuPaste.Image = global::HostsFileEditor.Properties.Resources.Paste;
-        this.menuPaste.Name = "menuPaste";
-        resources.ApplyResources(this.menuPaste, "menuPaste");
-        this.menuPaste.Click += new System.EventHandler(this.OnPasteClick);
+        menuPaste.Image = Properties.Resources.Paste;
+        menuPaste.Name = "menuPaste";
+        resources.ApplyResources(menuPaste, "menuPaste");
+        menuPaste.Click += OnPasteClick;
+        // 
+        // toolStripSeparator33
+        // 
+        toolStripSeparator33.Name = "toolStripSeparator33";
+        resources.ApplyResources(toolStripSeparator33, "toolStripSeparator33");
+        // 
+        // menuDuplicate
+        // 
+        menuDuplicate.Image = Properties.Resources.Duplicate;
+        menuDuplicate.Name = "menuDuplicate";
+        resources.ApplyResources(menuDuplicate, "menuDuplicate");
+        menuDuplicate.Click += OnDuplicateClick;
         // 
         // toolStripSeparator5
         // 
@@ -757,17 +698,10 @@ partial class MainForm
         // 
         // menuDelete
         // 
-        this.menuDelete.Image = global::HostsFileEditor.Properties.Resources.Delete;
-        this.menuDelete.Name = "menuDelete";
-        resources.ApplyResources(this.menuDelete, "menuDelete");
-        this.menuDelete.Click += new System.EventHandler(this.OnDeleteClick);
-        // 
-        // menuDuplicate
-        // 
-        this.menuDuplicate.Image = global::HostsFileEditor.Properties.Resources.Duplicate;
-        this.menuDuplicate.Name = "menuDuplicate";
-        resources.ApplyResources(this.menuDuplicate, "menuDuplicate");
-        this.menuDuplicate.Click += new System.EventHandler(this.OnDuplicateClick);
+        menuDelete.Image = Properties.Resources.Delete;
+        menuDelete.Name = "menuDelete";
+        resources.ApplyResources(menuDelete, "menuDelete");
+        menuDelete.Click += OnDeleteClick;
         // 
         // toolStripSeparator6
         // 
@@ -776,17 +710,17 @@ partial class MainForm
         // 
         // menuMoveUp
         // 
-        this.menuMoveUp.Image = global::HostsFileEditor.Properties.Resources.MoveUp;
-        this.menuMoveUp.Name = "menuMoveUp";
-        resources.ApplyResources(this.menuMoveUp, "menuMoveUp");
-        this.menuMoveUp.Click += new System.EventHandler(this.OnMoveUpClick);
+        menuMoveUp.Image = Properties.Resources.MoveUp;
+        menuMoveUp.Name = "menuMoveUp";
+        resources.ApplyResources(menuMoveUp, "menuMoveUp");
+        menuMoveUp.Click += OnMoveUpClick;
         // 
         // menuMoveDown
         // 
-        this.menuMoveDown.Image = global::HostsFileEditor.Properties.Resources.MoveDown;
-        this.menuMoveDown.Name = "menuMoveDown";
-        resources.ApplyResources(this.menuMoveDown, "menuMoveDown");
-        this.menuMoveDown.Click += new System.EventHandler(this.OnMoveDownClick);
+        menuMoveDown.Image = Properties.Resources.MoveDown;
+        menuMoveDown.Name = "menuMoveDown";
+        resources.ApplyResources(menuMoveDown, "menuMoveDown");
+        menuMoveDown.Click += OnMoveDownClick;
         // 
         // toolStripSeparator24
         // 
@@ -795,54 +729,49 @@ partial class MainForm
         // 
         // insertRowAboveToolStripMenuItem
         // 
-        this.insertRowAboveToolStripMenuItem.Image = global::HostsFileEditor.Properties.Resources.InsertAbove;
-        this.insertRowAboveToolStripMenuItem.Name = "insertRowAboveToolStripMenuItem";
-        resources.ApplyResources(this.insertRowAboveToolStripMenuItem, "insertRowAboveToolStripMenuItem");
-        this.insertRowAboveToolStripMenuItem.Click += new System.EventHandler(this.OnInsertAboveClick);
+        insertRowAboveToolStripMenuItem.Image = Properties.Resources.InsertAbove;
+        insertRowAboveToolStripMenuItem.Name = "insertRowAboveToolStripMenuItem";
+        resources.ApplyResources(insertRowAboveToolStripMenuItem, "insertRowAboveToolStripMenuItem");
+        insertRowAboveToolStripMenuItem.Click += OnInsertAboveClick;
         // 
         // insertRowBelowToolStripMenuItem
         // 
-        this.insertRowBelowToolStripMenuItem.Image = global::HostsFileEditor.Properties.Resources.InsertBelow;
-        this.insertRowBelowToolStripMenuItem.Name = "insertRowBelowToolStripMenuItem";
-        resources.ApplyResources(this.insertRowBelowToolStripMenuItem, "insertRowBelowToolStripMenuItem");
-        this.insertRowBelowToolStripMenuItem.Click += new System.EventHandler(this.OnInsertBelowClick);
+        insertRowBelowToolStripMenuItem.Image = Properties.Resources.InsertBelow;
+        insertRowBelowToolStripMenuItem.Name = "insertRowBelowToolStripMenuItem";
+        resources.ApplyResources(insertRowBelowToolStripMenuItem, "insertRowBelowToolStripMenuItem");
+        insertRowBelowToolStripMenuItem.Click += OnInsertBelowClick;
         // 
         // toolStripSeparator30
         // 
-        this.toolStripSeparator30.Name = "toolStripSeparator30";
-        resources.ApplyResources(this.toolStripSeparator30, "toolStripSeparator30");
+        toolStripSeparator30.Name = "toolStripSeparator30";
+        resources.ApplyResources(toolStripSeparator30, "toolStripSeparator30");
         // 
         // menuCheck
         // 
-        this.menuCheck.Image = global::HostsFileEditor.Properties.Resources.Check;
-        resources.ApplyResources(this.menuCheck, "menuCheck");
-        this.menuCheck.Name = "menuCheck";
-        this.menuCheck.Click += new System.EventHandler(this.OnCheckClick);
+        menuCheck.Image = Properties.Resources.Check;
+        resources.ApplyResources(menuCheck, "menuCheck");
+        menuCheck.Name = "menuCheck";
+        menuCheck.Click += OnCheckClick;
         // 
         // menuUncheck
         // 
-        this.menuUncheck.Image = global::HostsFileEditor.Properties.Resources.Uncheck;
-        resources.ApplyResources(this.menuUncheck, "menuUncheck");
-        this.menuUncheck.Name = "menuUncheck";
-        this.menuUncheck.Click += new System.EventHandler(this.OnUncheckClick);
+        menuUncheck.Image = Properties.Resources.Uncheck;
+        resources.ApplyResources(menuUncheck, "menuUncheck");
+        menuUncheck.Name = "menuUncheck";
+        menuUncheck.Click += OnUncheckClick;
         // 
         // viewToolStripMenuItem
         // 
-        this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-        this.menuViewArchive,
-        toolStripSeparator9,
-        menuFilter,
-        this.toolStripSeparator29,
-        this.menuRemoveSort});
-        this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-        resources.ApplyResources(this.viewToolStripMenuItem, "viewToolStripMenuItem");
+        viewToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { menuViewArchive, toolStripSeparator9, menuFilter, toolStripSeparator29, menuRemoveSort });
+        viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+        resources.ApplyResources(viewToolStripMenuItem, "viewToolStripMenuItem");
         // 
         // menuViewArchive
         // 
-        this.menuViewArchive.Image = global::HostsFileEditor.Properties.Resources.ViewArchive;
-        this.menuViewArchive.Name = "menuViewArchive";
-        resources.ApplyResources(this.menuViewArchive, "menuViewArchive");
-        this.menuViewArchive.Click += new System.EventHandler(this.OnViewArchiveClick);
+        menuViewArchive.Image = Properties.Resources.ViewArchive;
+        menuViewArchive.Name = "menuViewArchive";
+        resources.ApplyResources(menuViewArchive, "menuViewArchive");
+        menuViewArchive.Click += OnViewArchiveClick;
         // 
         // toolStripSeparator9
         // 
@@ -851,91 +780,85 @@ partial class MainForm
         // 
         // menuFilter
         // 
-        menuFilter.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-        this.menuFilterComments,
-        this.menuFilterDisabled});
-        menuFilter.Image = global::HostsFileEditor.Properties.Resources.Filter;
+        menuFilter.DropDownItems.AddRange(new ToolStripItem[] { menuFilterComments, menuFilterDisabled });
+        menuFilter.Image = Properties.Resources.Filter;
         menuFilter.Name = "menuFilter";
         resources.ApplyResources(menuFilter, "menuFilter");
         // 
         // menuFilterComments
         // 
-        this.menuFilterComments.Image = global::HostsFileEditor.Properties.Resources.FilterComments;
-        this.menuFilterComments.Name = "menuFilterComments";
-        resources.ApplyResources(this.menuFilterComments, "menuFilterComments");
-        this.menuFilterComments.Click += new System.EventHandler(this.OnFilterCommentClick);
+        menuFilterComments.Image = Properties.Resources.FilterComments;
+        menuFilterComments.Name = "menuFilterComments";
+        resources.ApplyResources(menuFilterComments, "menuFilterComments");
+        menuFilterComments.Click += OnFilterCommentClick;
         // 
         // menuFilterDisabled
         // 
-        this.menuFilterDisabled.Image = global::HostsFileEditor.Properties.Resources.FilterDisabled;
-        this.menuFilterDisabled.Name = "menuFilterDisabled";
-        resources.ApplyResources(this.menuFilterDisabled, "menuFilterDisabled");
-        this.menuFilterDisabled.Click += new System.EventHandler(this.OnFilterDisabledClick);
+        menuFilterDisabled.Image = Properties.Resources.FilterDisabled;
+        menuFilterDisabled.Name = "menuFilterDisabled";
+        resources.ApplyResources(menuFilterDisabled, "menuFilterDisabled");
+        menuFilterDisabled.Click += OnFilterDisabledClick;
         // 
         // toolStripSeparator29
         // 
-        this.toolStripSeparator29.Name = "toolStripSeparator29";
-        resources.ApplyResources(this.toolStripSeparator29, "toolStripSeparator29");
+        toolStripSeparator29.Name = "toolStripSeparator29";
+        resources.ApplyResources(toolStripSeparator29, "toolStripSeparator29");
         // 
         // menuRemoveSort
         // 
-        this.menuRemoveSort.Name = "menuRemoveSort";
-        resources.ApplyResources(this.menuRemoveSort, "menuRemoveSort");
-        this.menuRemoveSort.Click += new System.EventHandler(this.OnRemoveSortClick);
+        menuRemoveSort.Name = "menuRemoveSort";
+        resources.ApplyResources(menuRemoveSort, "menuRemoveSort");
+        menuRemoveSort.Click += OnRemoveSortClick;
         // 
         // menuTools
         // 
-        this.menuTools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-        this.menuPingIPs,
-        this.menuRemoveDefaultText});
-        this.menuTools.Name = "menuTools";
-        resources.ApplyResources(this.menuTools, "menuTools");
+        menuTools.DropDownItems.AddRange(new ToolStripItem[] { menuPingIPs, menuRemoveDefaultText });
+        menuTools.Name = "menuTools";
+        resources.ApplyResources(menuTools, "menuTools");
         // 
         // menuPingIPs
         // 
-        this.menuPingIPs.Name = "menuPingIPs";
-        resources.ApplyResources(this.menuPingIPs, "menuPingIPs");
-        this.menuPingIPs.Click += new System.EventHandler(this.OnPingIPsClick);
+        menuPingIPs.Name = "menuPingIPs";
+        resources.ApplyResources(menuPingIPs, "menuPingIPs");
+        menuPingIPs.Click += OnPingIPsClick;
         // 
         // menuRemoveDefaultText
         // 
-        this.menuRemoveDefaultText.Checked = true;
-        this.menuRemoveDefaultText.CheckState = System.Windows.Forms.CheckState.Checked;
-        this.menuRemoveDefaultText.Name = "menuRemoveDefaultText";
-        resources.ApplyResources(this.menuRemoveDefaultText, "menuRemoveDefaultText");
-        this.menuRemoveDefaultText.Click += new System.EventHandler(this.OnRemoveDefaultTextClick);
+        menuRemoveDefaultText.CheckState = CheckState.Checked;
+        menuRemoveDefaultText.Checked = true;
+        menuRemoveDefaultText.Name = "menuRemoveDefaultText";
+        resources.ApplyResources(menuRemoveDefaultText, "menuRemoveDefaultText");
+        menuRemoveDefaultText.Click += OnRemoveDefaultTextClick;
+        // 
+        // helpToolStripMenuItem
+        // 
+        helpToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aboutToolStripMenuItem });
+        helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+        resources.ApplyResources(helpToolStripMenuItem, "helpToolStripMenuItem");
+        // 
+        // aboutToolStripMenuItem
+        // 
+        aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+        resources.ApplyResources(aboutToolStripMenuItem, "aboutToolStripMenuItem");
+        aboutToolStripMenuItem.Click += OnAboutClick;
         // 
         // toolStrip
         // 
-        this.toolStrip.ClickThrough = true;
-        resources.ApplyResources(this.toolStrip, "toolStrip");
-        this.toolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-        this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-        this.buttonSave,
-        toolStripSeparator15,
-        this.buttonRefresh,
-        toolStripSeparator26,
-        this.buttonDisable,
-        toolStripSeparator16,
-        this.buttonArchive,
-        this.buttonViewArchive,
-        toolStripSeparator17,
-        this.toolStripDropDownButton1,
-        this.buttonFilterComment,
-        this.buttonFilterDisabled,
-        this.textFilter,
-        toolStripSeparator19});
-        this.toolStrip.Name = "toolStrip";
-        this.toolStrip.Stretch = true;
-        this.toolStrip.TextChanged += new System.EventHandler(this.OnFilterTextChanged);
+        toolStrip.ClickThrough = true;
+        resources.ApplyResources(toolStrip, "toolStrip");
+        toolStrip.GripStyle = ToolStripGripStyle.Hidden;
+        toolStrip.Items.AddRange(new ToolStripItem[] { buttonSave, toolStripSeparator15, buttonRefresh, toolStripSeparator26, buttonDisable, toolStripSeparator16, buttonArchive, buttonViewArchive, toolStripSeparator17, toolStripDropDownButton1, buttonFilterComment, buttonFilterDisabled, textFilter, toolStripSeparator19 });
+        toolStrip.Name = "toolStrip";
+        toolStrip.Stretch = true;
+        toolStrip.TextChanged += OnFilterTextChanged;
         // 
         // buttonSave
         // 
-        this.buttonSave.Image = global::HostsFileEditor.Properties.Resources.Save;
-        resources.ApplyResources(this.buttonSave, "buttonSave");
-        this.buttonSave.Margin = new System.Windows.Forms.Padding(2, 1, 0, 2);
-        this.buttonSave.Name = "buttonSave";
-        this.buttonSave.Click += new System.EventHandler(this.OnSaveClick);
+        buttonSave.Image = Properties.Resources.Save;
+        resources.ApplyResources(buttonSave, "buttonSave");
+        buttonSave.Margin = new Padding(2, 1, 0, 2);
+        buttonSave.Name = "buttonSave";
+        buttonSave.Click += OnSaveClick;
         // 
         // toolStripSeparator15
         // 
@@ -944,10 +867,10 @@ partial class MainForm
         // 
         // buttonRefresh
         // 
-        this.buttonRefresh.Image = global::HostsFileEditor.Properties.Resources.Refresh;
-        resources.ApplyResources(this.buttonRefresh, "buttonRefresh");
-        this.buttonRefresh.Name = "buttonRefresh";
-        this.buttonRefresh.Click += new System.EventHandler(this.OnRefreshClick);
+        buttonRefresh.Image = Properties.Resources.Refresh;
+        resources.ApplyResources(buttonRefresh, "buttonRefresh");
+        buttonRefresh.Name = "buttonRefresh";
+        buttonRefresh.Click += OnRefreshClick;
         // 
         // toolStripSeparator26
         // 
@@ -956,10 +879,10 @@ partial class MainForm
         // 
         // buttonDisable
         // 
-        this.buttonDisable.Image = global::HostsFileEditor.Properties.Resources.Disable;
-        resources.ApplyResources(this.buttonDisable, "buttonDisable");
-        this.buttonDisable.Name = "buttonDisable";
-        this.buttonDisable.Click += new System.EventHandler(this.OnDisableHostsClick);
+        buttonDisable.Image = Properties.Resources.Disable;
+        resources.ApplyResources(buttonDisable, "buttonDisable");
+        buttonDisable.Name = "buttonDisable";
+        buttonDisable.Click += OnDisableHostsClick;
         // 
         // toolStripSeparator16
         // 
@@ -968,17 +891,17 @@ partial class MainForm
         // 
         // buttonArchive
         // 
-        this.buttonArchive.Image = global::HostsFileEditor.Properties.Resources.Archive;
-        resources.ApplyResources(this.buttonArchive, "buttonArchive");
-        this.buttonArchive.Name = "buttonArchive";
-        this.buttonArchive.Click += new System.EventHandler(this.OnArchiveClick);
+        buttonArchive.Image = Properties.Resources.Archive;
+        resources.ApplyResources(buttonArchive, "buttonArchive");
+        buttonArchive.Name = "buttonArchive";
+        buttonArchive.Click += OnArchiveClick;
         // 
         // buttonViewArchive
         // 
-        this.buttonViewArchive.Image = global::HostsFileEditor.Properties.Resources.ViewArchive;
-        resources.ApplyResources(this.buttonViewArchive, "buttonViewArchive");
-        this.buttonViewArchive.Name = "buttonViewArchive";
-        this.buttonViewArchive.Click += new System.EventHandler(this.OnViewArchiveClick);
+        buttonViewArchive.Image = Properties.Resources.ViewArchive;
+        resources.ApplyResources(buttonViewArchive, "buttonViewArchive");
+        buttonViewArchive.Name = "buttonViewArchive";
+        buttonViewArchive.Click += OnViewArchiveClick;
         // 
         // toolStripSeparator17
         // 
@@ -987,31 +910,31 @@ partial class MainForm
         // 
         // toolStripDropDownButton1
         // 
-        this.toolStripDropDownButton1.Image = global::HostsFileEditor.Properties.Resources.Filter;
-        resources.ApplyResources(this.toolStripDropDownButton1, "toolStripDropDownButton1");
-        this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
+        toolStripDropDownButton1.Image = Properties.Resources.Filter;
+        resources.ApplyResources(toolStripDropDownButton1, "toolStripDropDownButton1");
+        toolStripDropDownButton1.Name = "toolStripDropDownButton1";
         // 
         // buttonFilterComment
         // 
-        this.buttonFilterComment.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-        this.buttonFilterComment.Image = global::HostsFileEditor.Properties.Resources.FilterComments;
-        this.buttonFilterComment.Name = "buttonFilterComment";
-        resources.ApplyResources(this.buttonFilterComment, "buttonFilterComment");
-        this.buttonFilterComment.Click += new System.EventHandler(this.OnFilterCommentClick);
+        buttonFilterComment.DisplayStyle = ToolStripItemDisplayStyle.Image;
+        buttonFilterComment.Image = Properties.Resources.FilterComments;
+        buttonFilterComment.Name = "buttonFilterComment";
+        resources.ApplyResources(buttonFilterComment, "buttonFilterComment");
+        buttonFilterComment.Click += OnFilterCommentClick;
         // 
         // buttonFilterDisabled
         // 
-        this.buttonFilterDisabled.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-        this.buttonFilterDisabled.Image = global::HostsFileEditor.Properties.Resources.FilterDisabled;
-        this.buttonFilterDisabled.Name = "buttonFilterDisabled";
-        resources.ApplyResources(this.buttonFilterDisabled, "buttonFilterDisabled");
-        this.buttonFilterDisabled.Click += new System.EventHandler(this.OnFilterDisabledClick);
+        buttonFilterDisabled.DisplayStyle = ToolStripItemDisplayStyle.Image;
+        buttonFilterDisabled.Image = Properties.Resources.FilterDisabled;
+        buttonFilterDisabled.Name = "buttonFilterDisabled";
+        resources.ApplyResources(buttonFilterDisabled, "buttonFilterDisabled");
+        buttonFilterDisabled.Click += OnFilterDisabledClick;
         // 
         // textFilter
         // 
-        this.textFilter.Name = "textFilter";
-        resources.ApplyResources(this.textFilter, "textFilter");
-        this.textFilter.TextChanged += new System.EventHandler(this.OnFilterTextChanged);
+        textFilter.Name = "textFilter";
+        resources.ApplyResources(textFilter, "textFilter");
+        textFilter.TextChanged += OnFilterTextChanged;
         // 
         // toolStripSeparator19
         // 
@@ -1035,161 +958,144 @@ partial class MainForm
         // 
         // toolStripSeparator2
         // 
-        this.toolStripSeparator2.Name = "toolStripSeparator2";
-        resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
+        toolStripSeparator2.Name = "toolStripSeparator2";
+        resources.ApplyResources(toolStripSeparator2, "toolStripSeparator2");
         // 
         // toolStripSeparator7
         // 
-        this.toolStripSeparator7.Name = "toolStripSeparator7";
-        resources.ApplyResources(this.toolStripSeparator7, "toolStripSeparator7");
+        toolStripSeparator7.Name = "toolStripSeparator7";
+        resources.ApplyResources(toolStripSeparator7, "toolStripSeparator7");
         // 
         // toolStripSeparator
         // 
-        this.toolStripSeparator.Name = "toolStripSeparator";
-        resources.ApplyResources(this.toolStripSeparator, "toolStripSeparator");
+        toolStripSeparator.Name = "toolStripSeparator";
+        resources.ApplyResources(toolStripSeparator, "toolStripSeparator");
         // 
         // toolStripSeparator3
         // 
-        this.toolStripSeparator3.Name = "toolStripSeparator3";
-        resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
+        toolStripSeparator3.Name = "toolStripSeparator3";
+        resources.ApplyResources(toolStripSeparator3, "toolStripSeparator3");
         // 
         // toolStripSeparator8
         // 
-        this.toolStripSeparator8.Name = "toolStripSeparator8";
-        resources.ApplyResources(this.toolStripSeparator8, "toolStripSeparator8");
+        toolStripSeparator8.Name = "toolStripSeparator8";
+        resources.ApplyResources(toolStripSeparator8, "toolStripSeparator8");
         // 
         // toolStripSeparator10
         // 
-        this.toolStripSeparator10.Name = "toolStripSeparator10";
-        resources.ApplyResources(this.toolStripSeparator10, "toolStripSeparator10");
+        toolStripSeparator10.Name = "toolStripSeparator10";
+        resources.ApplyResources(toolStripSeparator10, "toolStripSeparator10");
         // 
         // toolStripSeparator11
         // 
-        this.toolStripSeparator11.Name = "toolStripSeparator11";
-        resources.ApplyResources(this.toolStripSeparator11, "toolStripSeparator11");
+        toolStripSeparator11.Name = "toolStripSeparator11";
+        resources.ApplyResources(toolStripSeparator11, "toolStripSeparator11");
         // 
         // toolStripMenuItem1
         // 
-        this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-        resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
+        toolStripMenuItem1.Name = "toolStripMenuItem1";
+        resources.ApplyResources(toolStripMenuItem1, "toolStripMenuItem1");
         // 
         // toolStripStatusLabel1
         // 
-        this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-        resources.ApplyResources(this.toolStripStatusLabel1, "toolStripStatusLabel1");
+        toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+        resources.ApplyResources(toolStripStatusLabel1, "toolStripStatusLabel1");
         // 
         // toolStripButton1
         // 
-        this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-        resources.ApplyResources(this.toolStripButton1, "toolStripButton1");
-        this.toolStripButton1.Name = "toolStripButton1";
+        toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image;
+        resources.ApplyResources(toolStripButton1, "toolStripButton1");
+        toolStripButton1.Name = "toolStripButton1";
         // 
         // saveFileDialog
         // 
-        this.saveFileDialog.FileName = "hosts";
-        resources.ApplyResources(this.saveFileDialog, "saveFileDialog");
-        this.saveFileDialog.InitialDirectory = "C:\\Windows\\System32\\drivers\\etc";
+        saveFileDialog.FileName = "hosts";
+        resources.ApplyResources(saveFileDialog, "saveFileDialog");
+        saveFileDialog.InitialDirectory = "C:\\Windows\\System32\\drivers\\etc";
         // 
         // notifyIcon
         // 
-        this.notifyIcon.ContextMenuStrip = this.contextMenuTray;
-        resources.ApplyResources(this.notifyIcon, "notifyIcon");
-        this.notifyIcon.DoubleClick += new System.EventHandler(this.OnNotifyIconDoubleClick);
+        notifyIcon.ContextMenuStrip = contextMenuTray;
+        resources.ApplyResources(notifyIcon, "notifyIcon");
+        notifyIcon.DoubleClick += OnNotifyIconDoubleClick;
         // 
         // contextMenuTray
         // 
-        this.contextMenuTray.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-        this.menuContextEdit,
-        toolStripSeparator21,
-        this.menuContextDisable,
-        toolStripSeparator20,
-        this.contextMenuExit});
-        this.contextMenuTray.Name = "contextMenuTray";
-        resources.ApplyResources(this.contextMenuTray, "contextMenuTray");
+        contextMenuTray.Items.AddRange(new ToolStripItem[] { menuContextEdit, toolStripSeparator21, menuContextDisable, toolStripSeparator20, contextMenuExit });
+        contextMenuTray.Name = "contextMenuTray";
+        resources.ApplyResources(contextMenuTray, "contextMenuTray");
         // 
         // menuContextEdit
         // 
-        this.menuContextEdit.Name = "menuContextEdit";
-        resources.ApplyResources(this.menuContextEdit, "menuContextEdit");
-        this.menuContextEdit.Click += new System.EventHandler(this.OnEditClick);
+        menuContextEdit.Name = "menuContextEdit";
+        resources.ApplyResources(menuContextEdit, "menuContextEdit");
+        menuContextEdit.Click += OnEditClick;
         // 
         // menuContextDisable
         // 
-        this.menuContextDisable.Image = global::HostsFileEditor.Properties.Resources.Disable;
-        this.menuContextDisable.Name = "menuContextDisable";
-        resources.ApplyResources(this.menuContextDisable, "menuContextDisable");
-        this.menuContextDisable.Click += new System.EventHandler(this.OnDisableHostsClick);
+        menuContextDisable.Image = Properties.Resources.Disable;
+        menuContextDisable.Name = "menuContextDisable";
+        resources.ApplyResources(menuContextDisable, "menuContextDisable");
+        menuContextDisable.Click += OnDisableHostsClick;
         // 
         // contextMenuExit
         // 
-        this.contextMenuExit.Name = "contextMenuExit";
-        resources.ApplyResources(this.contextMenuExit, "contextMenuExit");
-        this.contextMenuExit.Click += new System.EventHandler(this.OnExitClick);
+        contextMenuExit.Name = "contextMenuExit";
+        resources.ApplyResources(contextMenuExit, "contextMenuExit");
+        contextMenuExit.Click += OnExitClick;
         // 
         // openFileDialog
         // 
-        this.openFileDialog.FileName = "hosts";
-        resources.ApplyResources(this.openFileDialog, "openFileDialog");
+        openFileDialog.FileName = "hosts";
+        resources.ApplyResources(openFileDialog, "openFileDialog");
         // 
         // bindingSourceHostEntries
         // 
-        this.bindingSourceHostEntries.DataSource = typeof(HostsFileEditor.HostsEntryList);
-        // 
-        // helpToolStripMenuItem
-        // 
-        this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-        this.aboutToolStripMenuItem});
-        this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-        resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
-        // 
-        // aboutToolStripMenuItem
-        // 
-        this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-        resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
-        this.aboutToolStripMenuItem.Click += new System.EventHandler(this.OnAboutClick);
+        bindingSourceHostEntries.DataSource = typeof(HostsEntryList);
         // 
         // MainForm
         // 
         resources.ApplyResources(this, "$this");
-        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        this.Controls.Add(this.toolStripContainer);
-        this.MainMenuStrip = this.menuStrip;
-        this.Name = "MainForm";
-        this.ShowInTaskbar = false;
-        this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OnFormClosing);
-        this.Load += new System.EventHandler(this.OnFomLoad);
-        this.Shown += new System.EventHandler(this.OnFormShown);
-        this.ResizeEnd += new System.EventHandler(this.OnResizingEnd);
-        this.VisibleChanged += new System.EventHandler(this.OnVisibleChanged);
-        this.toolStripContainer.BottomToolStripPanel.ResumeLayout(false);
-        this.toolStripContainer.BottomToolStripPanel.PerformLayout();
-        this.toolStripContainer.ContentPanel.ResumeLayout(false);
-        this.toolStripContainer.TopToolStripPanel.ResumeLayout(false);
-        this.toolStripContainer.TopToolStripPanel.PerformLayout();
-        this.toolStripContainer.ResumeLayout(false);
-        this.toolStripContainer.PerformLayout();
-        this.statusStrip.ResumeLayout(false);
-        this.statusStrip.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHostFile)).EndInit();
-        this.splitContainer.Panel1.ResumeLayout(false);
-        this.splitContainer.Panel2.ResumeLayout(false);
-        this.splitContainer.Panel2.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).EndInit();
-        this.splitContainer.ResumeLayout(false);
-        ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHostsEntries)).EndInit();
-        this.contextMenuGrid.ResumeLayout(false);
-        ((System.ComponentModel.ISupportInitialize)(this.bindingSourceView)).EndInit();
-        ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArchive)).EndInit();
-        ((System.ComponentModel.ISupportInitialize)(this.bindingSourceArchive)).EndInit();
-        this.toolStripArchive.ResumeLayout(false);
-        this.toolStripArchive.PerformLayout();
-        this.menuStrip.ResumeLayout(false);
-        this.menuStrip.PerformLayout();
-        this.toolStrip.ResumeLayout(false);
-        this.toolStrip.PerformLayout();
-        this.contextMenuTray.ResumeLayout(false);
-        ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHostEntries)).EndInit();
-        this.ResumeLayout(false);
+        AutoScaleMode = AutoScaleMode.Font;
+        Controls.Add(toolStripContainer);
+        MainMenuStrip = menuStrip;
+        MaximizeBox = false;
+        Name = "MainForm";
+        ShowInTaskbar = false;
+        FormClosing += OnFormClosing;
+        Load += OnFomLoad;
+        Shown += OnFormShown;
+        ResizeEnd += OnResizingEnd;
+        VisibleChanged += OnVisibleChanged;
+        toolStripContainer.BottomToolStripPanel.ResumeLayout(false);
+        toolStripContainer.BottomToolStripPanel.PerformLayout();
+        toolStripContainer.ContentPanel.ResumeLayout(false);
+        toolStripContainer.TopToolStripPanel.ResumeLayout(false);
+        toolStripContainer.TopToolStripPanel.PerformLayout();
+        toolStripContainer.ResumeLayout(false);
+        toolStripContainer.PerformLayout();
+        statusStrip.ResumeLayout(false);
+        statusStrip.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)bindingSourceHostFile).EndInit();
+        splitContainer.Panel1.ResumeLayout(false);
+        splitContainer.Panel2.ResumeLayout(false);
+        splitContainer.Panel2.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)splitContainer).EndInit();
+        splitContainer.ResumeLayout(false);
+        ((System.ComponentModel.ISupportInitialize)dataGridViewHostsEntries).EndInit();
+        contextMenuGrid.ResumeLayout(false);
+        ((System.ComponentModel.ISupportInitialize)bindingSourceView).EndInit();
+        ((System.ComponentModel.ISupportInitialize)dataGridViewArchive).EndInit();
+        ((System.ComponentModel.ISupportInitialize)bindingSourceArchive).EndInit();
+        toolStripArchive.ResumeLayout(false);
+        toolStripArchive.PerformLayout();
+        menuStrip.ResumeLayout(false);
+        menuStrip.PerformLayout();
+        toolStrip.ResumeLayout(false);
+        toolStrip.PerformLayout();
+        contextMenuTray.ResumeLayout(false);
+        ((System.ComponentModel.ISupportInitialize)bindingSourceHostEntries).EndInit();
+        ResumeLayout(false);
 
     }
 
